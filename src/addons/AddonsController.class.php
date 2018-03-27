@@ -1,11 +1,8 @@
 <?php
 namespace think\addons;
-class Route extends Controller
+class Controller extends \think\Controller
 {
-    /**
-     * 插件执行
-     */
-	protected $addons = null;
+    protected $addons = null;
 
 	public function execute($_addons = null, $_controller = null, $_action = null){
 		if(C('URL_CASE_INSENSITIVE')){
