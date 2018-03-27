@@ -1,10 +1,17 @@
 <?php
-define('ADDON_PATH', ROOT_PATH . 'addons' . DS);
+
 define('DS', DIRECTORY_SEPARATOR);
+defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(APP_PATH)) . DS);
+define('ADDON_PATH', ROOT_PATH . 'addons' . DS);
 
 if (!is_dir(ADDON_PATH)) {
     @mkdir(ADDON_PATH, 0777, true);
 }
+
+
+ 
+ 
+
 
 /**
  * 处理插件钩子

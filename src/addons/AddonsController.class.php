@@ -1,6 +1,6 @@
 <?php
-namespace think\addons;
-class AddonsController extends \think\Controller
+namespace Think\addons;
+class AddonsController extends \Think\Controller
 {
     protected $addons = null;
 

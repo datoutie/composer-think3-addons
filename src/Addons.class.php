@@ -1,8 +1,8 @@
 <?php
-namespace think;
+namespace Think;
 
 
-abstract class Addon{
+abstract class Addons{
     /**
      * 视图实例对象
      * @var view
@@ -27,9 +27,10 @@ abstract class Addon{
     public $config_file = '';
 
     public function __construct(){
+        echo '111111111';
         $this->addons_path = ADDON_PATH . $this->getName() . DS;
-        if(is_file($this->addon_path.'config.php')){
-            $this->config_file = $this->addon_path.'config.php';
+        if(is_file($this->addons_path.'config.php')){
+            $this->config_file = $this->addons_path.'config.php';
         }
         $TMPL_PARSE_STRING = C('TMPL_PARSE_STRING');
         $TMPL_PARSE_STRING['__ADDONROOT__'] = __ROOT__ . '/Addons/'.$this->getName();
@@ -84,7 +85,7 @@ abstract class Addon{
     }
     final protected function fetch($templateFile = CONTROLLER_NAME){
         if(!is_file($templateFile)){
-            $templateFile = $this->addon_path.$templateFile.C('TMPL_TEMPLATE_SUFFIX');
+            $templateFile = $this->addons_path.$templateFile.C('TMPL_TEMPLATE_SUFFIX');
             if(!is_file($templateFile)){
                 throw new \Exception("模板不存在:$templateFile");
             }
