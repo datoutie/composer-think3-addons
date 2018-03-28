@@ -27,7 +27,6 @@ abstract class Addons{
     public $config_file = '';
 
     public function __construct(){
-        echo '111111111';
         $this->addons_path = ADDON_PATH . $this->getName() . DS;
         if(is_file($this->addons_path.'config.php')){
             $this->config_file = $this->addons_path.'config.php';
