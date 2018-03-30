@@ -16,9 +16,9 @@ abstract class Addons{
      * $info = [
      *  'name'          => 'Test',
      *  'title'         => '测试插件',
-     *  'description'   => '用于thinkphp5的插件扩展演示',
+     *  'description'   => '用于thinkphp3的插件扩展演示',
      *  'status'        => 1,
-     *  'author'        => 'byron sampson',
+     *  'author'        => '',
      *  'version'       => '0.1'
      * ]
      */

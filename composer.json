@@ -2,7 +2,7 @@
     "name": "mrli/composer-think3-addons",
     "description": "think3-addons",
     "license": "Apache-2.0",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "authors": [
         {
             "name": "Li",
@@ -17,8 +17,8 @@
         "psr-4": {
             "Think\\": "src/think/",
             "Addon\\Controller\\":"src/addons/AddonsController.class.php",
-            "Addon\\Behavior\\":"src/addons/InitHookBehavior.class.php",
-            "Addon\\Conf\\":"src/addons/tags.php"
+            "Common\\Behavior\\":"src/addons/InitHookBehavior.class.php",
+            "Common\\Conf\\":"src/addons/tags.php"
         },
         "files": [
             "src/function.php"

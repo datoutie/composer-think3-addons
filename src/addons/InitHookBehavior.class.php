@@ -1,5 +1,5 @@
 <?php
-namespace Addon\Behavior;
+namespace Common\Behavior;
 use Think\Behavior;
 use Think\Hook;
 // 初始化钩子信息

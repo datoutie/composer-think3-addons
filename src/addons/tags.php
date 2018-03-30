@@ -1,5 +1,5 @@
 <?php
-namespace Addon\Conf;
+namespace Common\Conf;
 return array(
-	'app_init'=>array('Addon\Behavior\InitHookBehavior')
+	'app_init'=>array('Common\Behavior\InitHookBehavior')
 );

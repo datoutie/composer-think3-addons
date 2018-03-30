@@ -50,7 +50,6 @@ function get_addon_config($name){
  * 插件显示内容里生成访问插件的url
  * @param string $url url
  * @param array $param 参数
- * @author 麦当苗儿 <zuojiazi@vip.qq.com>
  */
 function addons_url($url, $param = array()){
     $url        = parse_url($url);
